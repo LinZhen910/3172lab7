@@ -1,0 +1,28 @@
+.gallery {
+    padding: 2rem;
+}
+
+.gallery-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.paintings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .paintings-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .paintings-grid {
+        grid-template-columns: 1fr;
+    }
+}
